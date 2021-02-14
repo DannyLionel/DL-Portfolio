@@ -1,0 +1,80 @@
+</html>
+<style>
+body{
+     margin: auto;
+  width: 50%;
+  
+}
+img{
+    margin:auto;
+    width: 50%;
+}
+</style>
+<body>
+<h1 id="mytrack">MyTrack</h1>
+<p><img src="https://allansantosh.com/DistributedProject/mytrack.png" width="250" height="250" /></p>
+<h2 id="introduction">Introduction</h2>
+<p>Statistics show major cities like New York have had their auto theft rate increase by 60% in the year 2020. Most cars
+    manufactured prior to 2010 lack the capability to track it’s GPS location if stolen. Our project was to create a
+    compact GPS tracker that enables you to view the current location of the car from your smartphone device. </p>
+<h2 id="project-structure">Project Structure</h2>
+<p><img src="https://allansantosh.com/DistributedProject/dis_pro_structure.png" alt="picture alt"
+        title="System Structure"></p>
+<h2 id="demo">Demo</h2>
+<p> <a href="https://drive.google.com/file/d/1DqHj3wBf8m6oKxlSw5wjeBVqq63zad9v/view?usp=sharing"><img
+            src="https://allansantosh.com/DistributedProject/dis_pro_Demo.png" alt="Watch the demo video"
+            title="Demo Video on Google Drive"></a></p>
+<h2 id="installation-instructions">Installation Instructions</h2>
+<h3 id="mobile-app">Mobile App</h3>
+<ul>
+    <li>Download the Project folder <code>Mobile App/MyTrack</code> and open it with Android Studio.</li>
+    <li>Compile and Run the Project on a Simulator or your own Raspberry Pi Device.</li>
+    <li>Use login username <code>freddy</code> and password <code>qwe</code> to login to the App.</li>
+    <li>
+        <p>Another login is username <code>allansantosh</code> and password <code>qwerty1</code> to login to the App.
+        </p>
+        <h3 id="data-analysis-node">Data Analysis Node</h3>
+    </li>
+    <li>
+        <p>Download the contents of the folder <code>Analysis Server Node</code></p>
+    </li>
+    <li>Set Class Path. If using Linux use the following command
+        <code>export CLASSPATH=$CLASSPATH:/pathto/file/org.eclipse.paho.client.mqttv3-1.2.5.jar:/pathto/file/mysql-connector-java-8.0.21.jar</code>
+    </li>
+    <li>In terminal complile the java file by typing <code>javac main_server.java</code></li>
+    <li>
+        <p>Launch program by typing <code>java main_server</code></p>
+        <h3 id="database-synchronization-node">Database Synchronization Node</h3>
+    </li>
+    <li>
+        <p>Download the contents of the folder <code>Database Sync Node</code></p>
+    </li>
+    <li>Set Class Path. If using Linux use the following command
+        <code>export CLASSPATH=$CLASSPATH:/pathto/file/mysql-connector-java-8.0.21.jar</code>
+    </li>
+    <li>In terminal complile the java file by typing <code>javac database_sync.java</code></li>
+    <li>
+        <p>Launch program by typing <code>java database_sync</code></p>
+        <h3 id="database">Database</h3>
+    </li>
+    <li>
+        <p>The sample SQL file has been provided in the folder <code>Primary &amp; Failover Database SQL</code></p>
+    </li>
+    <li>The Databases are currently stored in a VPS and will be left Online till end of the month.</li>
+    <li>
+        <p>However if you want to simulate this locally, everywhere you see connection addrees to VPS IP address, change
+            it to localhost.</p>
+        <h3 id="raspberry-pi-gps-tracker">Raspberry PI GPS Tracker</h3>
+    </li>
+    <li>
+        <p>Download the contents of the folder <code>Raspberry Pi (GPS Tracker)</code> into a Raspberry Pi</p>
+    </li>
+    <li>Run the python code like this <code>python3 tracker.py</code></li>
+    <li>If you have a GPS sensor then connect it. Otherwise App will just say <code>Device Online</code> and will NOT
+        show GPS coordinates. It may also show <code>GPS Malfunction</code> message indicating something is wrong with
+        your GPS tracker (Raspberry Pi).</li>
+</ul>
+
+</body>
+
+</html>
